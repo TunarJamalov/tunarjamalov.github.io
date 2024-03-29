@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/sta.webp"
+      type="image/x-icon"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <title>Tunar Jamalov</title>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <h2>Tunar Jamalov</h2>
+      <ul>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    
+   
+    <div class="main">
+      <h4>Hello, I'm <span>Tunar</span> 👋</h4>
+      <p class="title">Full Stack Developer</p>
+      <p class="subtitle"></p>
+    </div>
+    
+    
+
+    <h5 class="seprator" id="about">About me</h5>
+
+    <div class="about">
+      <img src="assets/img/sta.webp" />
+      <div class="info">
+        <h3>What can I do for you?</h3>
+        <p>
+          <li>I can open a special personal website for you.</li>
+          <li>I can open a website specifically for your brand.</li>
+          <li>I can open a website specifically for the Discord bot.</li>
+          <li>I can make a private Discord bot.</li>
+          <li>I can make a special website for a Discord server.</li>
+        </p>
+      </div>
+    </div>
+
+    <h5 class="seprator" id="skills">Skills</h5>
+
+    <div class="skills">
+      <div class="left">
+        <div class="info">
+          <h3>What do my programming skills include?</h3>
+          <p>
+            I develop a simple, intuitive and responsive user interface 
+            that helps 
+            users get their work done with less effort and time, 
+            with these technologies.
+          </p>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="item">
+          <i class="bx bxl-html5"></i>
+        </div>
+        <div class="item">
+          <i class="bx bxl-css3"></i>
+        </div>
+        <div class="item">
+          <i class="bx bxl-bootstrap"></i>
+        </div>
+        <div class="item">
+          <i class="bx bxl-php"></i>
+        </div>
+        <div class="item">
+          <i class="bx bxl-javascript"></i>
+        </div>
+      </div>
+    </div>
+    <h5 class="seprator" id="project">My Project</h5>
+    <div  class="guarantee">
+      
+      <div  class="item">
+        
+        <div class="icon">
+          <i class='bx bxl-github'></i>        
+        </div>
+        <div  class="info">
+          <h3 >
+          <a target="_blank" href="https://github.com/TunarJamalov/xox-game.github.io">xox game</a>
+        </h3>
+          <p>Simple xox game with js</p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <i class='bx bxl-github'></i>
+        </div>
+        <div class="info">
+          <h3>
+            <a target="_blank" href="https://github.com/TunarJamalov/reqem-texmin-oyunu">number game</a>
+          </h3>
+          <p>Simple number game with js</p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <i class='bx bxl-github'></i>
+        </div>
+        <div class="info">
+          <h3></h3>
+          <p></p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+      
+     
+    </div>
+    <h5 class="seprator" id="contact1">Contact</h5>
+    <form id="form">
+      <div class="field">
+        <label for="subject">E-mail</label>
+        <input type="email" name="subject" id="subject">
+      </div>
+      <div class="field">
+        <label for="name">Your name</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <input type="text" name="message" id="message">
+      </div>
+      
+    
+      <input type="submit" id="button" value="Send Email" >
+    </form>
+    <style>
+      /* Form Container */
+#form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* Form Fields */
+.field {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: aliceblue;
+}
+
+/* Text Inputs */
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Make sure padding and border included in the width */
+}
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Make sure padding and border included in the width */
+}
+
+/* Submit Button */
+#button {
+  width: 100%;
+  padding: 10px;
+  background-color: #03f4f4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Button Hover Effect */
+#button:hover {
+  background-color: #161b1b;
+}
+
+    </style>
+    
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+      emailjs.init('jd4Mqa1HvZPmB4KDt')
+    </script>
+    <script src="script.js"></script>
+    
+    <footer id="contact">
+      <div class="start">
+        <h3>Tunar Jamalov</h3>
+        <p>
+          You can follow me on these accounts!
+        </p>
+        <style>
+          .ul {
+            list-style: none;
+            display: flex;
+            transition: color 0.3s ease;
+          }
+          
+          
+          .ul li {
+            margin: 0 5px;
+            font-size: 25px;
+            transition: all 0.2s ease-in-out;
+          }
+
+          .ul li a {
+            color: white;
+            text-decoration: none;
+          }
+
+          .ul li:hover {
+            transform: translateY(-2px);
+          }
+          
+          
+
+
+          .ul li a .bxl-instagram {
+            border-radius: 15px;
+            background: #f09433;
+            background: -moz-linear-gradient(
+              45deg,
+              #f09433 0%,
+              #e6683c 25%,
+              #dc2743 50%,
+              #cc2366 75%,
+              #bc1888 100%
+            );
+            background: -webkit-linear-gradient(
+              45deg,
+              #f09433 0%,
+              #e6683c 25%,
+              #dc2743 50%,
+              #cc2366 75%,
+              #bc1888 100%
+            );
+            background: linear-gradient(
+              45deg,
+              #f09433 0%,
+              #e6683c 25%,
+              #dc2743 50%,
+              #cc2366 75%,
+              #bc1888 100%
+            );
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+          }
+
+          .ul li a .bxl-youtube {
+            color: red;
+          }
+
+          .ul li a .bxl-github {
+            color: black;
+          }
+
+          .ul li a .bxl-discord {
+            color: rgb(70, 70, 201);
+          }
+        </style>
+        <ul class="ul">
+          <li>
+            <a target="_blank" href="https://instagram.com/t_jamalov"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/tunar-camalov-22a7a1255/"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/TunarJamalov"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://discord.gg/genelev"
+              ><i class="bx bxl-discord"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cols">
+        <div class="about-col">
+          <h3>Tunar Jamalov</h3>
+          <p>Full Stack Developer</p>
+        </div>
+
+        <div class="links-col">
+          <h4>Links</h4>
+          <a href="#project">Projects</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact1">Contact</a>
+        </div>
+        <script>
+          document.querySelectorAll('.links-col a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      const target = document.querySelector(this.getAttribute('href'));
+      target.scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+        </script>
+        <div class="links-col">
+          <h4>Social Media</h4>
+          <a target="_blank" href="https://instagram.com/t_jamalov">Instagram</a>
+          <a target="_blank" href="https://www.linkedin.com/in/tunar-camalov-22a7a1255/">LinkedIn</a>
+          <a target="_blank" href="https://github.com/TunarJamalov">Github</a>
+          <a target="_blank" href="https://discord.gg/genelev">Discord</a>
+        </div>
+
+        
+      </div>
+    </footer>
+   
+  </body>
+</html>
