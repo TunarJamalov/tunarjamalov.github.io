@@ -3,20 +3,20 @@ const btn = document.getElementById('button');
 document.getElementById('form').addEventListener('submit', function(event) {
    event.preventDefault();
 
-   // Formdaki giriş alanlarını al
+  
    const emailInput = document.getElementById('subject').value.trim();
    const nameInput = document.getElementById('name').value.trim();
    const messageInput = document.getElementById('message').value.trim();
 
-   // Eğer herhangi bir giriş alanı boşsa işlemi iptal et ve hata mesajı göster
+   
    if (emailInput === '' || nameInput === '' || messageInput === '') {
        swal({ 
           text: "Please fill out all fields before submitting.",
           icon: "error", 
           button: "OK"
        });
-       btn.value = 'Send Email'; // Buton metnini eski haline getir
-       return; // İşlemi durdur
+       btn.value = 'Send Email'; 
+       return; 
    }
 
    btn.value = 'Sending...';
@@ -31,9 +31,9 @@ document.getElementById('form').addEventListener('submit', function(event) {
           icon: "success", 
           button: "Back",
        });
-       // Formu temizle
+       
        document.getElementById('form').reset();
-       btn.value = 'Send Email'; // Buton metnini eski haline getir
+       btn.value = 'Send Email'; 
    })
    .catch((error) => {
        swal({ 
@@ -41,7 +41,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
           icon: "error", 
           button: "OK",
        });
-       btn.value = 'Send Email'; // Buton metnini eski haline getir
+       btn.value = 'Send Email'; 
    });
 });
 
